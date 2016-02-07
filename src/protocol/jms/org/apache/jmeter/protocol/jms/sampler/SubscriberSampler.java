@@ -204,7 +204,7 @@ public class SubscriberSampler extends BaseJMSSampler implements Interruptible, 
             result.setResponseCodeOK();
             result.setSuccessful(true);
         }
-        result.setResponseMessage(read + " message(s) received successfully");
+        result.setResponseMessage(read + " message(s) received successfully out of " + loop + " expected");
         result.setSamplerData(loop + " messages expected");
         result.setSampleCount(read);
         
